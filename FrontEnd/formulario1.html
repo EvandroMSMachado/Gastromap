@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 1</title>
+
+    <style>
+        form input,
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_patient INT NOT NULL,
+    uva INT DEFAULT NULL,
+    tapioca INT DEFAULT NULL,
+    requeijao INT DEFAULT NULL,
+    tomate INT DEFAULT NULL,
+    repolho INT DEFAULT NULL,
+    sorv_picole INT DEFAULT NULL,
+    salgadinho INT DEFAULT NULL,
+    energeticos INT DEFAULT NULL,
+    form_finaliz BOOLEAN DEFAULT 0,
+    FOREIGN KEY (id_patient) REFERENCES patient
+    
+    -->
+
+
+    <form id="myForm">
+        <p>Com qual frequência você come uva:</p>
+        <label for="uva1">Nunca</label>
+        <input type="radio" name="uva" id="uva" class="uva" value="1">
+
+        <label for="uva1">Menos de 1 vez por mês</label>
+        <input type="radio" name="uva" id="uva1" class="uva" value="2">
+
+        <label for="uva2">De 1 a 3 vezes por mês</label>
+        <input type="radio" name="uva" id="uva2" class="uva" value="3">
+
+        <label for="uva3">1 vez por semana</label>
+        <input type="radio" name="uva" id="uva3" class="uva" value="4">
+
+        <label for="uva4">2 a 4 vezes por semana</label>
+        <input type="radio" name="uva" id="uva4" class="uva" value="5">
+
+        <label for="uva5">1 vez por dia</label>
+        <input type="radio" name="uva" id="uva5" class="uva" value="6">
+
+        <label for="uva5">2 ou mais vezes por dia</label>
+        <input type="radio" name="uva" id="uva5" class="uva" value="7">
+
+        <p>Com qual frequência você come tapioca:</p>
+        <label for="tapioca1">Nunca</label>
+        <input type="radio" name="tapioca" id="tapioca1" value="1">
+
+        <label for="tapioca2">Menos de 1 vez por mês</label>
+        <input type="radio" name="tapioca" id="tapioca2" value="2">
+
+        <label for="tapioca3">De 1 a 3 vezes por mês</label>
+        <input type="radio" name="tapioca" id="tapioca3" value="3">
+
+        <label for="tapioca4">1 vez por semana</label>
+        <input type="radio" name="tapioca" id="tapioca4" value="4">
+
+        <label for="tapioca5">2 a 4 vezes por semana</label>
+        <input type="radio" name="tapioca" id="tapioca5" value="5">
+
+        <label for="tapioca6">1 vez por dia</label>
+        <input type="radio" name="tapioca" id="tapioca6" value="6">
+
+        <label for="tapioca7">2 ou mais vezes por dia</label>
+        <input type="radio" name="tapioca" id="tapioca7" value="7">
+
+
+        <p>Com qual frequência você come requeijão:</p>
+        <label for="requeijao1">Nunca</label>
+        <input type="radio" name="requeijao" id="requeijao1" value="1">
+
+        <label for="requeijao2">Menos de 1 vez por mês</label>
+        <input type="radio" name="requeijao" id="requeijao2" value="2">
+
+        <label for="requeijao3">De 1 a 3 vezes por mês</label>
+        <input type="radio" name="requeijao" id="requeijao3" value="3">
+
+        <label for="requeijao4">1 vez por semana</label>
+        <input type="radio" name="requeijao" id="requeijao4" value="4">
+
+        <label for="requeijao5">2 a 4 vezes por semana</label>
+        <input type="radio" name="requeijao" id="requeijao5" value="5">
+
+        <label for="requeijao6">1 vez por dia</label>
+        <input type="radio" name="requeijao" id="requeijao6" value="6">
+
+        <label for="requeijao7">2 ou mais vezes por dia</label>
+        <input type="radio" name="requeijao" id="requeijao7" value="7">
+
+        <p>Com qual frequência você come tomate:</p>
+        <label for="tomate1">Nunca</label>
+        <input type="radio" name="tomate" id="tomate1" value="1">
+
+        <label for="tomate2">Menos de 1 vez por mês</label>
+        <input type="radio" name="tomate" id="tomate2" value="2">
+
+        <label for="tomate3">De 1 a 3 vezes por mês</label>
+        <input type="radio" name="tomate" id="tomate3" value="3">
+
+        <label for="tomate4">1 vez por semana</label>
+        <input type="radio" name="tomate" id="tomate4" value="4">
+
+        <label for="tomate5">2 a 4 vezes por semana</label>
+        <input type="radio" name="tomate" id="tomate5" value="5">
+
+        <label for="tomate6">1 vez por dia</label>
+        <input type="radio" name="tomate" id="tomate6" value="6">
+
+        <label for="tomate7">2 ou mais vezes por dia</label>
+        <input type="radio" name="tomate" id="tomate7" value="7">
+
+        <p>Com qual frequência você come repolho:</p>
+        <label for="repolho1">Nunca</label>
+        <input type="radio" name="repolho" id="repolho1" value="1">
+
+        <label for="repolho2">Menos de 1 vez por mês</label>
+        <input type="radio" name="repolho" id="repolho2" value="2">
+
+        <label for="repolho3">De 1 a 3 vezes por mês</label>
+        <input type="radio" name="repolho" id="repolho3" value="3">
+
+        <label for="repolho4">1 vez por semana</label>
+        <input type="radio" name="repolho" id="repolho4" value="4">
+
+        <label for="repolho5">2 a 4 vezes por semana</label>
+        <input type="radio" name="repolho" id="repolho5" value="5">
+
+        <label for="repolho6">1 vez por dia</label>
+        <input type="radio" name="repolho" id="repolho6" value="6">
+
+        <label for="repolho7">2 ou mais vezes por dia</label>
+        <input type="radio" name="repolho" id="repolho7" value="7">
+
+        <p>Com qual frequência você come sorvete e picolé:</p>
+        <label for="sorvete1">Nunca</label>
+        <input type="radio" name="sorvete" id="sorvete1" value="1">
+
+        <label for="sorvete2">Menos de 1 vez por mês</label>
+        <input type="radio" name="sorvete" id="sorvete2" value="2">
+
+        <label for="sorvete3">De 1 a 3 vezes por mês</label>
+        <input type="radio" name="sorvete" id="sorvete3" value="3">
+
+        <label for="sorvete4">1 vez por semana</label>
+        <input type="radio" name="sorvete" id="sorvete4" value="4">
+
+        <label for="sorvete5">2 a 4 vezes por semana</label>
+        <input type="radio" name="sorvete" id="sorvete5" value="5">
+
+        <label for="sorvete6">1 vez por dia</label>
+        <input type="radio" name="sorvete" id="sorvete6" value="6">
+
+        <label for="sorvete7">2 ou mais vezes por dia</label>
+        <input type="radio" name="sorvete" id="sorvete7" value="7">
+
+        <p>Com qual frequência você come salgadinho:</p>
+        <label for="salgadinho1">Nunca</label>
+        <input type="radio" name="salgadinho" id="salgadinho1" value="1">
+
+        <label for="salgadinho2">Menos de 1 vez por mês</label>
+        <input type="radio" name="salgadinho" id="salgadinho2" value="2">
+
+        <label for="salgadinho3">De 1 a 3 vezes por mês</label>
+        <input type="radio" name="salgadinho" id="salgadinho3" value="3">
+
+        <label for="salgadinho4">1 vez por semana</label>
+        <input type="radio" name="salgadinho" id="salgadinho4" value="4">
+
+        <label for="salgadinho5">2 a 4 vezes por semana</label>
+        <input type="radio" name="salgadinho" id="salgadinho5" value="5">
+
+        <label for="salgadinho6">1 vez por dia</label>
+        <input type="radio" name="salgadinho" id="salgadinho6" value="6">
+
+        <label for="salgadinho7">2 ou mais vezes por dia</label>
+        <input type="radio" name="salgadinho" id="salgadinho7" value="7">
+
+        <p>Com qual frequência você consome energéticos:</p>
+        <label for="energetico1">Nunca</label>
+        <input type="radio" name="energetico" id="energetico1" value="1">
+
+        <label for="energetico2">Menos de 1 vez por mês</label>
+        <input type="radio" name="energetico" id="energetico2" value="2">
+
+        <label for="energetico3">De 1 a 3 vezes por mês</label>
+        <input type="radio" name="energetico" id="energetico3" value="3">
+
+        <label for="energetico4">1 vez por semana</label>
+        <input type="radio" name="energetico" id="energetico4" value="4">
+
+        <label for="energetico5">2 a 4 vezes por semana</label>
+        <input type="radio" name="energetico" id="energetico5" value="5">
+
+        <label for="energetico6">1 vez por dia</label>
+        <input type="radio" name="energetico" id="energetico6" value="6">
+
+        <label for="energetico7">2 vez ou mais por dia</label>
+        <input type="radio" name="energetico" id="energetico7" value="7">
+
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const inputUva = document.querySelectorAll('.uva');
+
+        let uva = { "uva": "1" };
+        let data = [];
+
+
+        inputUva.forEach((element, index) => {
+            element.addEventListener('input', ({ target }) => {
+                const { name, value } = target;
+                uva = { [name]: value }
+
+                console.log(uva)
+            });
+        })
+
+    </script>
+</body>
+
+</html>
