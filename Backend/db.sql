@@ -33,4 +33,5 @@ CREATE TABLE form (
     FOREIGN KEY (id_patient) REFERENCES patient (id)
 );
 
+DROP TABLE alimentos01;
 
